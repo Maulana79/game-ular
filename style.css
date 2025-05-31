@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    font-family: 'Orbitron', sans-serif; /* Font futuristik, bisa diganti jika tidak tersedia */
+    background-color: #0a0a1e; /* Dark blue/purple background */
+    color: #00ffcc; /* Neon cyan text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden; /* Mencegah scrollbar jika konten sedikit lebih besar */
+    font-size: 16px;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(10, 25, 47, 0.8); /* Slightly transparent dark blue */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(0, 255, 204, 0.5); /* Neon cyan glow */
+    border: 2px solid #00ffcc;
+}
+
+header {
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #ff00ff; /* Neon pink */
+    text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
+    margin-bottom: 10px;
+}
+
+.score-container, .high-score-container {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+#score, #highScore {
+    color: #ffff00; /* Neon yellow */
+    font-weight: bold;
+}
+
+canvas {
+    background-color: #000510; /* Very dark blue, almost black for contrast */
+    border: 3px solid #00ffff; /* Bright cyan border */
+    box-shadow: 0 0 15px #00ffff;
+    display: block; /* Mencegah spasi ekstra di bawah canvas */
+    margin: 0 auto; /* Pusatkan canvas */
+}
+
+.game-over-screen, .start-screen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 10, 20, 0.95);
+    padding: 30px 40px;
+    border-radius: 10px;
+    border: 2px solid #ff00ff;
+    box-shadow: 0 0 20px #ff00ff;
+    text-align: center;
+    z-index: 10;
+}
+
+.game-over-screen h2, .start-screen h2 {
+    color: #ff00ff;
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.game-over-screen p, .start-screen p {
+    color: #00ffcc;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.start-screen p {
+    max-width: 400px; /* Agar teks tidak terlalu lebar */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    background-color: #ff00ff; /* Neon pink */
+    color: #0a0a1e; /* Dark background color for text contrast */
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.2em;
+    font-family: 'Orbitron', sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #00ffcc; /* Neon cyan on hover */
+    box-shadow: 0 0 15px #00ffcc;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Untuk font Orbitron jika ingin di-host sendiri atau dari Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');

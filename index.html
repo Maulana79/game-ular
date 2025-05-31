@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Slither</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Cyber Slither</h1>
+            <div class="score-container">
+                Skor: <span id="score">0</span>
+            </div>
+            <div class="high-score-container">
+                Skor Tertinggi: <span id="highScore">0</span>
+            </div>
+        </header>
+        <canvas id="gameCanvas"></canvas>
+        <div id="gameOverScreen" class="game-over-screen hidden">
+            <h2>GAME OVER</h2>
+            <p>Skor Akhir: <span id="finalScore">0</span></p>
+            <button id="restartButton">Mulai Ulang</button>
+        </div>
+        <div id="startScreen" class="start-screen">
+            <h2>Selamat Datang di Cyber Slither</h2>
+            <p>Kendalikan Neon Serpent-mu dan makanlah Data Orbs untuk tumbuh.</p>
+            <p>Hindari menabrak dinding atau dirimu sendiri!</p>
+            <p>Gunakan tombol panah (Arrow Keys) atau A,W,S,D untuk bergerak.</p>
+            <button id="startButton">Mulai Game</button>
+        </div>
+    </div>
+    <script src="game.js"></script></body>
+</html>
